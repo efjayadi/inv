@@ -248,7 +248,8 @@ function apply() {
  document.getElementById("jumlah").innerHTML = jum ; 
  document.getElementById("tanggalA").innerHTML = t ; 
  document.getElementById("produk").innerHTML = nn ; 
- document.getElementById("berat").innerHTML = b+" gr" ; 
+ document.getElementById("beratA").innerHTML = b+" gr" ; 
+ document.getElementById("beratB").innerHTML = b+" gr" ; 
  document.getElementById("tanggalB").innerHTML = "  "+t ; 
 document.getElementById("totalbayarA").innerHTML = "Rp "+x ; 
  document.getElementById("totalbayarB").innerHTML = "Rp "+x ; 
@@ -346,7 +347,7 @@ document.getElementById("totalbayarA").innerHTML = "Rp "+x ;
                                                         <td style="text-align: right; white-space: nowrap; vertical-align: middle;">
                                                             
                                                             
-															<span id="totalbayarA" class="sans s12" style="text-align:right;margin-right:-6px;">Total Bayar A</span>
+															<span id="totalbayarA" class="sans s12" style="text-align:right;margin-right:-6px;">Rp XXX.XXX.XXX</span>
 
                                                         </td>
                                                     </tr>
@@ -366,7 +367,7 @@ document.getElementById("totalbayarA").innerHTML = "Rp "+x ;
                                                 Subtotal Belanja
                                             </td>
                                             <td  style="padding: 10px; text-align: right;">
-                                                <span id="totalbayarB">TotalBayar B</span>
+                                                <span id="totalbayarB">Rp XXX.XXX.XXX</span>
                                             </td>
                                         </tr>
                                     </tbody></table>
@@ -430,7 +431,7 @@ document.getElementById("totalbayarA").innerHTML = "Rp "+x ;
                                         <tbody><tr>
                                             <td>Total Bayar</td>
                                             
-                                            <td style="text-align: right;"> <span id="totalbayarC">TotalBayar C</span>
+                                            <td style="text-align: right;"> <span id="totalbayarC">Rp XXX.XXX.XXX</span>
                                             </td>
                                             
                                         </tr>
@@ -513,7 +514,7 @@ document.getElementById("totalbayarA").innerHTML = "Rp "+x ;
 Jl. Raya Bojongsoang, Kec. Bojongsoang, Bandung, Jawa Barat, 40287 [Tokopedia Note: Perumahan Permata Buah Batu Blok A No. 15, Bojong Soang]
 Bojong Soang Kab. Bandung 40287
 Jawa Barat
-6281286366209 </textarea>
+6281286366209</textarea>
                                                         
                                                     </div>
                                                 </td>
@@ -571,13 +572,13 @@ Jawa Barat
                                         <span id="jumlah">jumlah</span>
                                     </td>
                                     <td valign="top" style="padding: 15px; text-align: center; white-space: nowrap;">
-                                        <span id="berat">500 g</span>
+                                        <span id="beratA">500 g</span>
                                     </td>
                                     <td valign="top" style="padding: 15px; white-space: nowrap; text-align: center;">
                                        <span id="harga">harga</span>
                                     </td>
                                     <td valign="top" style="padding: 15px; white-space: nowrap;">
-                                        <span id="subtotalA">subtotal A</span>
+                                        <span id="subtotalA">Rp XXX.XXX.XXX</span>
                                     </td>
                                 </tr>
 
@@ -601,7 +602,7 @@ Jawa Barat
                                             <tr>
                                                 <td style="padding: 15px;">Subtotal Harga Barang</td>
                                                 <td style="padding: 15px 0 15px 15px; text-align: right;">
-                                                    <span id="subtotalB">subtotal B</span></td>
+                                                    <span id="subtotalB">Rp XXX.XXX.XXX</span></td>
                                             </tr>
                                         </tbody></table>
                                     </td>
@@ -633,9 +634,9 @@ Jawa Barat
                                                                     AnterAja -
                                                                     Reguler
                                                                     (Berat:
-                                                                    500 gr)</td>
+                                                                    <span id="beratB">500 gr</span>)</td>
                                                                 <td style="padding-bottom: 10px;text-align: right; white-space: nowrap; vertical-align: top;">
-                                                                    <span id="ongkirA">ongkir A</span></td>
+                                                                    <span id="ongkirA">Rp XXX.XXX</span></td>
                                                             </tr>
                                                             <!-- show this in invoice section subtotal ongkos kirim -->
                                                             
@@ -643,7 +644,7 @@ Jawa Barat
                                                                 <td style="border-top: thin solid #e0e0e0; padding-top: 10px;">
                                                                     Subtotal Ongkos Kirim</td>
                                                                 <td style="border-top: thin solid #e0e0e0; padding-top: 10px; text-align: right; white-space: nowrap;">
-                                                                    <span id="ongkirB">ongkir B</span>
+                                                                    <span id="ongkirB">Rp XXX.XXX</span>
                                                                 </td>
                                                             </tr>
                                                         </tbody></table>
@@ -759,7 +760,7 @@ Jawa Barat
                                             <tbody><tr>
                                                 <td>Total Bayar</td>
                                                 <td style="text-align: right;">
-                                                    <span id="totalbayarD">TotalBayar D</span></td>
+                                                    <span id="totalbayarD">Rp XXX.XXX.XXX</span></td>
                                             </tr>
                                         </tbody></table>
                                     </td>
