@@ -192,8 +192,9 @@ font-size:12px;
 				
 				<div   class="tooltip" onclick="apply()" style="border: none; height: 100%; cursor: pointer;padding: 8px 30px;border-color: #03AC0E;border-radius: 8px;background-color: #03AC0E;margin-left: 10px;color: #fff;font-size: 12px;line-height: 1.333;font-weight: 700;margin-right:6px;">Apply<span class="tooltiptext">Jangan Lupa Titik</span></div>
 				<img onclick="hiTF()" src="./Invoice_files/cc-new.png" height="25" alt="Kartu Kredit" style="vertical-align: middle; margin-left: 5px;">
-				 <img onclick="hiTP()"  src="./Invoice_files/icon-tokopoints.png" height="25" alt="TokoPoints" style="vertical-align: middle; margin-left: 5px;">
 				<img onclick="hiOVO()"  src="./Invoice_files/ovo.png" height="25" alt="OVO" style="vertical-align: middle; margin-left: 5px;">
+				 <img onclick="hiTP()"  src="./Invoice_files/icon-tokopoints.png" height="25" alt="TokoPoints" style="vertical-align: middle; margin-left: 5px;">
+				
                 
 				<a class="btn-print" href="javascript:window.print()" style="height: 100%; display: inline-block; vertical-align: middle;">
                     <button id="print-button" style="border: none; height: 100%; cursor: pointer;padding: 8px 40px;border-color: #03AC0E;border-radius: 8px;background-color: #03AC0E;margin-left: 16px;color: #fff;font-size: 12px;line-height: 1.333;font-weight: 700;">Cetak</button>
@@ -240,8 +241,10 @@ function apply() {
  var i =  document.getElementById("ininv").value ;
  var b =  document.getElementById("inber").value ;
  var n =  document.getElementById("innam").value ;
+ var a =  document.getElementById("inan").value ;
  var nn = n.toUpperCase();
  
+ document.getElementById("asuransi").innerHTML = "Rp "+a ; 
  document.getElementById("subtotalA").innerHTML = "Rp "+h ; 
  document.getElementById("subtotalB").innerHTML = "Rp "+h ; 
  document.getElementById("harga").innerHTML = "Rp "+h ; 
@@ -341,7 +344,7 @@ document.getElementById("totalbayarA").innerHTML = "Rp "+x ;
                                                     <tbody><tr>
                                                         <td style="padding: 0 10px 3px 0; width: 1%; white-space: nowrap;">
                                                           
-														  - <b><span id="nami"></span></b>
+														  - <b><div id="nami"></div></b>
                                                         </td>
                                                         
                                                         <td style="text-align: right; white-space: nowrap; vertical-align: middle;">
@@ -393,7 +396,8 @@ document.getElementById("totalbayarA").innerHTML = "Rp "+x ;
                                                     
                                                     <td>Potensi Cashback Tokopedia</td>
                                                     
-                                                    <td style="text-align: right; color: #42b549;">
+                                                    <td style="text-align: right; color: #42b549;" role="textbox" 
+  contenteditable>
                                                         
                                                             Rp 11.600
                                                             <font color="#6B6E72">
@@ -484,7 +488,7 @@ document.getElementById("totalbayarA").innerHTML = "Rp "+x ;
                                                     
                                                 </td>
                                                 <td style="position:absolute;margin-left:-3px;font-size: 12px; padding-bottom: 6px;">
-                                                    <input value="Penjual" id="inpen"/>
+                                                    <input style="text-decoration:underline;color:blue;" value="Penjual" id="inpen"/>
                                                 </td>
                                             </tr>
                                             
@@ -545,27 +549,13 @@ Jawa Barat
                                     <td width="330" style="padding: 15px; font-weight: 600; word-break: break-word;">
                                         <a href="#" id="produk" style="textTransform="uppercase"">SENSOR O2 OXYGEN OKSIGEN KNALPOT BAWAH JAZZ RS MOBILIO FREED BRIO</a>
 
-                                        
-
                                         <div style="margin: 10px 0 0;">
                                             
                                         </div>
 
                                         <div style="margin: 10px 0 0;">
-                                            
-                                            
-
-                                            
-
-                                            
-                                            
-
-                                            
-
-                                            
+                                       
                                         </div>
-
-                                        
 
                                     </td>
                                     <td valign="top" style="padding: 15px; text-align: center;">
@@ -630,7 +620,7 @@ Jawa Barat
                                                     <td style="width: 50%;">
                                                         <table width="100%" style="width: 430px; margin-top: 15px; padding: 15px; border-radius: 4px; border: thin dashed #cccccc; font-size: 14px; font-weight: 600;">
                                                             <tbody><tr style="font-weight: normal; font-size: 12px;">
-                                                                <td style="padding-bottom: 10px;">
+                                                                <td style="padding-bottom: 10px;"  role="textbox" contenteditable>
                                                                     AnterAja -
                                                                     Reguler
                                                                     (Berat:
@@ -677,7 +667,7 @@ Jawa Barat
                                                                     
                                                                 </td>
                                                                 <td style="padding-bottom: 10px;text-align: right; white-space: nowrap; vertical-align: top;">
-                                                                    Rp 1.300</td>
+                                                                    <input id="inan" style="text-align:right;" value="Rp 1.300"></td>
                                                             </tr>
                                                             
 
@@ -693,7 +683,7 @@ Jawa Barat
                                                                 <td style="border-top: thin solid #e0e0e0; padding-top: 10px;">
                                                                     Subtotal Biaya Lainnya</td>
                                                                 <td style="border-top: thin solid #e0e0e0; padding-top: 10px; text-align: right; white-space: nowrap;">
-                                                                    Rp 1.300</td>
+                                                                    <span id="asuransi">Rp 1.300</span></td>
                                                             </tr>
                                                         </tbody></table>
                                                     </td>
